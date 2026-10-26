@@ -1,0 +1,660 @@
+{
+ "profile": {
+  "name": "Khalid Abdussamii",
+  "title": "Computer Science Student | Aspiring Data Scientist",
+  "bio": "Computer Science student at Albukhary International University building a career in Data Science, Machine Learning and AI, backed by 59 verified certificates from IBM, DeepLearning.AI, Imperial College London and the University of Michigan. Elected to the Student Representative Council as the highest-voted general-seat candidate, I combine technical depth with proven leadership.",
+  "email": "",
+  "phone": "",
+  "location": "",
+  "profileImage": null,
+  "resume": null
+ },
+ "about": {
+  "description": "I'm Khalid, a BSc (Hons) Computer Science student at Albukhary International University with a focus on Machine Learning, Deep Learning and Data Analytics. Beyond the code, I lead: I was the highest-voted candidate in the AIU SRC general-seat election, now serve as Exco of Art & Culture, and have held leadership roles across NISCO, AFSA and the School of Computing & Informatics. I also perform, sing and compete, which keeps my communication sharp and my teamwork instinctive.",
+  "highlights": [
+   "Highest-voted candidate in the AIU SRC general-seat election (655 votes, #1 of 29)",
+   "Exco of Art & Culture, Student Representative Council (2026–2027 term)",
+   "59 verified certificates: IBM Data Science & Data Analyst, DeepLearning.AI Deep Learning Specialization",
+   "Dean's List Award recipient · Global #Mbassador 2026"
+  ]
+ },
+ "skills": [
+  {
+   "category": "Data Science & AI",
+   "items": [
+    "Machine Learning",
+    "Deep Learning",
+    "Artificial Intelligence (AI)",
+    "Data Science",
+    "Computer Science",
+    "Robotics"
+   ]
+  },
+  {
+   "category": "Leadership & Communication",
+   "items": [
+    "Leadership",
+    "Public Speaking",
+    "Public Relations",
+    "Public Affairs",
+    "Communication",
+    "Teamwork",
+    "Event Management",
+    "Time Management",
+    "Critical Thinking"
+   ]
+  },
+  {
+   "category": "Creative & Performing Arts",
+   "items": [
+    "Performing Arts",
+    "Vocal Performance",
+    "Singer-songwriter",
+    "Artist",
+    "Drawing",
+    "Visual Arts"
+   ]
+  },
+  {
+   "category": "Sports & Fitness",
+   "items": [
+    "Brazilian Jiu-Jitsu",
+    "Rugby",
+    "Football",
+    "Running",
+    "Cycling",
+    "Fitness Training"
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Albukhary International University (AIU)",
+   "degree": "BSc (Hons) Computer Science",
+   "startDate": "2024-10-01T00:00:00.000Z",
+   "endDate": "2027-10-01T00:00:00.000Z",
+   "description": "Dean's List Award recipient · SRC Member"
+  },
+  {
+   "institution": "Al-Ikhlas Comprehensive Schools",
+   "degree": "Science, Art & Commerce",
+   "startDate": "2008-01-01T00:00:00.000Z",
+   "endDate": "2023-01-01T00:00:00.000Z",
+   "description": "Student Senior Prefect (Head Boy)"
+  }
+ ],
+ "experience": [
+  {
+   "company": "AIU Student Representative Council",
+   "position": "Exco of Art & Culture",
+   "startDate": "2026-06-01T00:00:00.000Z",
+   "current": true,
+   "description": "Elected to the SRC after topping the general-seat vote; leads art and culture initiatives for the AIU student body.",
+   "technologies": []
+  },
+  {
+   "company": "Maybank",
+   "position": "Ambassador",
+   "startDate": "2026-05-01T00:00:00.000Z",
+   "current": true,
+   "description": "",
+   "technologies": []
+  },
+  {
+   "company": "Nigerian Students Community (NISCO), AIU",
+   "position": "Public Relations Officer",
+   "startDate": "2026-04-01T00:00:00.000Z",
+   "current": true,
+   "description": "",
+   "technologies": []
+  },
+  {
+   "company": "African Students Association (AFSA), AIU",
+   "position": "ICT Coordinator",
+   "startDate": "2026-02-01T00:00:00.000Z",
+   "current": true,
+   "description": "",
+   "technologies": []
+  },
+  {
+   "company": "Global Services Consult (GSC)",
+   "position": "Research & Innovation Manager",
+   "startDate": "2026-02-01T00:00:00.000Z",
+   "current": true,
+   "description": "",
+   "technologies": []
+  },
+  {
+   "company": "School of Computing & Informatics Committee, AIU",
+   "position": "Event Coordinator",
+   "startDate": "2025-12-01T00:00:00.000Z",
+   "current": true,
+   "description": "",
+   "technologies": []
+  },
+  {
+   "company": "Al-Ikhlas Comprehensive Schools",
+   "position": "Head Boy (Senior Prefect)",
+   "startDate": "2020-01-01T00:00:00.000Z",
+   "endDate": "2023-12-01T00:00:00.000Z",
+   "current": false,
+   "description": "",
+   "technologies": []
+  }
+ ],
+ "projects": [
+  {
+   "title": "Data Science Capstone",
+   "description": "Capstone project in data science, built in Jupyter Notebook.",
+   "technologies": [
+    "Python",
+    "Jupyter",
+    "Data Science"
+   ],
+   "liveUrl": "",
+   "githubUrl": "https://github.com/starr-saiff/capstone-project-data-science",
+   "featured": true
+  },
+  {
+   "title": "Student Performance Prediction",
+   "description": "A student performance prediction project built with JavaScript, in collaboration with Musa.",
+   "technologies": [
+    "JavaScript",
+    "Prediction"
+   ],
+   "liveUrl": "",
+   "githubUrl": "https://github.com/starr-saiff/std-perf-pred-Musa-x-Khalid_v2",
+   "featured": true
+  },
+  {
+   "title": "Data Science Tools",
+   "description": "A collection of data science tools and notebooks.",
+   "technologies": [
+    "Python",
+    "Jupyter"
+   ],
+   "liveUrl": "",
+   "githubUrl": "https://github.com/starr-saiff/my-data-science-tools",
+   "featured": false
+  },
+  {
+   "title": "Tesla Analysis",
+   "description": "Jupyter Notebook project on Tesla data.",
+   "technologies": [
+    "Python",
+    "Jupyter"
+   ],
+   "liveUrl": "",
+   "githubUrl": "https://github.com/starr-saiff/tesla",
+   "featured": false
+  },
+  {
+   "title": "Booklist App",
+   "description": "A booklist application built with JavaScript.",
+   "technologies": [
+    "JavaScript"
+   ],
+   "liveUrl": "",
+   "githubUrl": "https://github.com/starr-saiff/starrsaiff_booklist",
+   "featured": false
+  },
+  {
+   "title": "Food Ordering System Requirements",
+   "description": "Requirements documentation for a food ordering system.",
+   "technologies": [
+    "Requirements",
+    "Documentation"
+   ],
+   "liveUrl": "",
+   "githubUrl": "https://github.com/starr-saiff/FoodOrder-System-Requirements",
+   "featured": false
+  }
+ ],
+ "certifications": [
+  {
+   "name": "Mathematics for Machine Learning Specialization",
+   "issuer": "Imperial College London",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/specialization/2XQ16UWA0GC0",
+   "featured": true
+  },
+  {
+   "name": "Databases and SQL for Data Science with Python",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/H4ZNVRCEWSSX",
+   "featured": false
+  },
+  {
+   "name": "Python Project for Data Science",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/66ZU34H74RRF",
+   "featured": false
+  },
+  {
+   "name": "Using Python to Access Web Data",
+   "issuer": "University of Michigan",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/7LD45SVZCPZ2",
+   "featured": false
+  },
+  {
+   "name": "Mathematics for Machine Learning: PCA",
+   "issuer": "Imperial College London",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/ZQTGPFYP6GWD",
+   "featured": false
+  },
+  {
+   "name": "Mathematics for Machine Learning: Multivariate Calculus",
+   "issuer": "Imperial College London",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/4LPSHGLTGJG7",
+   "featured": false
+  },
+  {
+   "name": "Data Science Methodology",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/HZ5VZ9GAXRW0",
+   "featured": false
+  },
+  {
+   "name": "Python for Data Science, AI & Development",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/YVKBPCI9VBNS",
+   "featured": false
+  },
+  {
+   "name": "Python Data Structures",
+   "issuer": "University of Michigan",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/CGVZWEHHFYUB",
+   "featured": false
+  },
+  {
+   "name": "Programming for Everybody (Getting Started with Python)",
+   "issuer": "University of Michigan",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/7G9HLKQ0W72J",
+   "featured": false
+  },
+  {
+   "name": "Tools for Data Science",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/QF87104AZKIJ",
+   "featured": false
+  },
+  {
+   "name": "Mathematics for Machine Learning: Linear Algebra",
+   "issuer": "Imperial College London",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/XGGEJFZSWBQG",
+   "featured": false
+  },
+  {
+   "name": "What is Data Science?",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/VPEV1YDOPDWJ",
+   "featured": false
+  },
+  {
+   "name": "AI Fundamentals with IBM SkillsBuild",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.credly.com/earner/earned/badge/cb4df25a-cac4-407b-93c9-ebe10df8bdad",
+   "featured": false
+  },
+  {
+   "name": "Artificial Intelligence Fundamentals",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.credly.com/earner/earned/badge/4176bd6a-0f43-471f-a63c-e15dcf453838",
+   "featured": false
+  },
+  {
+   "name": "Databases and SQL for Data Science",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.credly.com/earner/earned/badge/397c5b23-633e-4342-8ab1-5284ad5f3327",
+   "featured": false
+  },
+  {
+   "name": "Data Science Orientation",
+   "issuer": "IBM",
+   "date": "Aug 2025",
+   "url": "https://www.credly.com/earner/earned/badge/5ad6e74d-b645-4a39-899a-1a8145f33551",
+   "featured": false
+  },
+  {
+   "name": "Capstone: Retrieving, Processing, and Visualizing Data with Python",
+   "issuer": "University of Michigan",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/MSP97G7A577X",
+   "featured": false
+  },
+  {
+   "name": "Data Analysis with Python",
+   "issuer": "IBM",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/verify/RT66Y4KANYLV",
+   "featured": false
+  },
+  {
+   "name": "Using Databases with Python",
+   "issuer": "University of Michigan",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/A8XZTQ6IFOFT",
+   "featured": false
+  },
+  {
+   "name": "Python for Everybody Specialization",
+   "issuer": "University of Michigan",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/specialization/SIAYUX3ICRV8",
+   "featured": true
+  },
+  {
+   "name": "Data Visualization with Python",
+   "issuer": "IBM",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/2HTQMRQ6803T",
+   "featured": false
+  },
+  {
+   "name": "Machine Learning with Python",
+   "issuer": "IBM",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/6ZCIBYU5GGJH",
+   "featured": false
+  },
+  {
+   "name": "Applied Data Science Capstone",
+   "issuer": "IBM",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/3GNTJROR7QRG",
+   "featured": true
+  },
+  {
+   "name": "Generative AI: Elevate Your Data Science Career",
+   "issuer": "IBM",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/L0GEKTCJK6GC",
+   "featured": false
+  },
+  {
+   "name": "Generative AI Essentials for Data Science",
+   "issuer": "IBM",
+   "date": "Sep 2025",
+   "url": "https://www.credly.com/earner/earned/badge/5ac71a34-3892-442e-b041-4fa7a8cd2777",
+   "featured": false
+  },
+  {
+   "name": "IBM Data Science Professional Certificate",
+   "issuer": "IBM",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/specialization/OBF5IZ1ZJKLX",
+   "featured": true
+  },
+  {
+   "name": "Data Scientist Career Guide and Interview Preparation",
+   "issuer": "IBM",
+   "date": "Sep 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/ACNKO6M4ZZUF",
+   "featured": false
+  },
+  {
+   "name": "Introduction to Data Engineering",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/89TD0KUFLAZF",
+   "featured": false
+  },
+  {
+   "name": "Data Engineering Essentials",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.credly.com/earner/earned/share/f36e4442-af37-4772-86c6-f5c23c3fe5f2",
+   "featured": false
+  },
+  {
+   "name": "Excel Essentials for Data Analytics",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.credly.com/earner/earned/share/cb2ab27c-0172-4c8b-989f-e438dcd24be6",
+   "featured": false
+  },
+  {
+   "name": "Excel Basics for Data Analysis",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/FCGY4GVJQ3V9",
+   "featured": false
+  },
+  {
+   "name": "Data Engineering Foundations Specialization",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.coursera.org/account/accomplishments/specialization/BLB2FO3VJBG5",
+   "featured": true
+  },
+  {
+   "name": "Relational Databases (RDBMS) Essentials",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.credly.com/badges/22e358ed-49e0-472d-95d9-c134f6d90732/linked_in_profile",
+   "featured": false
+  },
+  {
+   "name": "Introduction to Relational Databases (RDBMS)",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/T7IMSG0K4HOH",
+   "featured": false
+  },
+  {
+   "name": "Data Analytics Essentials",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.credly.com/badges/c0649ddc-eb4d-49ad-a4d5-558d4c1423cb/linked_in_profile",
+   "featured": false
+  },
+  {
+   "name": "Introduction to Data Analytics",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/MQVKQC23ZDPE",
+   "featured": false
+  },
+  {
+   "name": "Python Project for Data Engineering",
+   "issuer": "IBM",
+   "date": "Oct 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/EQBIDW5ZY8B8",
+   "featured": false
+  },
+  {
+   "name": "Data Visualization and Dashboards with Excel and Cognos",
+   "issuer": "IBM",
+   "date": "Nov 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/2W5QUNOTLI7N",
+   "featured": false
+  },
+  {
+   "name": "Data Visualization & Dashboard Essentials",
+   "issuer": "IBM",
+   "date": "Nov 2025",
+   "url": "https://www.credly.com/badges/0a335a6a-dbfd-4615-a952-c9aded9989a8/linked_in_profile",
+   "featured": false
+  },
+  {
+   "name": "Data Analyst Capstone Project",
+   "issuer": "IBM",
+   "date": "Dec 2025",
+   "url": "https://www.credly.com/badges/9437a184-2b15-4ebe-b55f-c09f6f668754/linked_in_profile",
+   "featured": false
+  },
+  {
+   "name": "Data Analyst Career Guide and Interview Preparation",
+   "issuer": "IBM",
+   "date": "Dec 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/QZC0UIAWPQL2",
+   "featured": false
+  },
+  {
+   "name": "IBM Data Analyst Professional Certificate",
+   "issuer": "IBM",
+   "date": "Feb 2026",
+   "url": "https://www.credly.com/badges/52749bb4-c3ac-452c-b2c1-64ec90699858/linked_in_profile",
+   "featured": true
+  },
+  {
+   "name": "Generative AI: Enhance your Data Analytics Career",
+   "issuer": "IBM",
+   "date": "Dec 2025",
+   "url": "https://www.coursera.org/account/accomplishments/records/N9GSUPY3EUOM",
+   "featured": false
+  },
+  {
+   "name": "Generative AI Essentials for Data Analytics",
+   "issuer": "IBM",
+   "date": "Feb 2026",
+   "url": "https://www.credly.com/badges/6ab2b2be-e527-46ee-bd04-ae121d5fda3b/linked_in_profile",
+   "featured": false
+  },
+  {
+   "name": "IBM Data Analyst Specialization",
+   "issuer": "IBM",
+   "date": "Dec 2025",
+   "url": "https://www.coursera.org/account/accomplishments/specialization/N6T8RJ5PG21H",
+   "featured": false
+  },
+  {
+   "name": "Supervised Machine Learning: Regression and Classification",
+   "issuer": "DeepLearning.AI",
+   "date": "Mar 2026",
+   "url": "https://www.coursera.org/account/accomplishments/records/IAJT2BCG0C1F",
+   "featured": false
+  },
+  {
+   "name": "Advanced Learning Algorithms",
+   "issuer": "DeepLearning.AI",
+   "date": "Mar 2026",
+   "url": "https://www.coursera.org/account/accomplishments/records/7ZF75MOLEQWV",
+   "featured": false
+  },
+  {
+   "name": "Machine Learning",
+   "issuer": "DeepLearning.AI",
+   "date": "Apr 2026",
+   "url": "https://www.coursera.org/account/accomplishments/specialization/S5KBAYA0DXG2",
+   "featured": true
+  },
+  {
+   "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+   "issuer": "DeepLearning.AI",
+   "date": "Apr 2026",
+   "url": "https://www.coursera.org/account/accomplishments/records/48C7ZWDQMKAG",
+   "featured": false
+  },
+  {
+   "name": "Neural Networks and Deep Learning",
+   "issuer": "DeepLearning.AI",
+   "date": "Jul 2026",
+   "url": "https://www.coursera.org/account/accomplishments/records/N8SML684HFDR",
+   "featured": false
+  },
+  {
+   "name": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+   "issuer": "DeepLearning.AI",
+   "date": "Jul 2026",
+   "url": "https://www.coursera.org/account/accomplishments/records/8YUNICER3OC3",
+   "featured": false
+  },
+  {
+   "name": "Structuring Machine Learning Projects",
+   "issuer": "DeepLearning.AI",
+   "date": "Aug 2026",
+   "url": "https://www.coursera.org/account/accomplishments/records/UCG8DT4LD1W4",
+   "featured": false
+  },
+  {
+   "name": "Convolutional Neural Networks",
+   "issuer": "DeepLearning.AI",
+   "date": "Aug 2026",
+   "url": "https://www.coursera.org/account/accomplishments/records/427OKER51MGD",
+   "featured": false
+  },
+  {
+   "name": "Sequence Models",
+   "issuer": "DeepLearning.AI",
+   "date": "Aug 2026",
+   "url": "https://www.coursera.org/account/accomplishments/records/RVIORAI2YC83",
+   "featured": false
+  },
+  {
+   "name": "Deep Learning",
+   "issuer": "DeepLearning.AI",
+   "date": "Aug 2026",
+   "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/PNWUVLQWDIRV",
+   "featured": false
+  },
+  {
+   "name": "Deep Learning Specialization",
+   "issuer": "DeepLearning.AI",
+   "date": "Aug 2026",
+   "url": "https://www.credly.com/badges/478b5457-984e-42dd-9b61-f8f9a6915f3f/linked_in_profile",
+   "featured": true
+  },
+  {
+   "name": "PCEP – Certified Entry-Level Python Programmer",
+   "issuer": "Python Institute",
+   "date": "Jan 2026",
+   "url": "https://www.credly.com/badges/fc5922c7-3b93-46b4-b58e-a460aee7b98d/linked_in_profile",
+   "featured": true
+  },
+  {
+   "name": "AI Fundamentals with IBM SkillsBuild",
+   "issuer": "Cisco Networking Academy",
+   "date": "Aug 2025",
+   "url": "",
+   "featured": true
+  }
+ ],
+ "achievement": {
+  "title": "Highest-Voted SRC Candidate",
+  "subtitle": "AIU Student Representative Council Election · Academic Year 2025/2026",
+  "stats": [
+   {
+    "value": "655",
+    "label": "Votes received"
+   },
+   {
+    "value": "#1",
+    "label": "Of 29 general-seat candidates"
+   },
+   {
+    "value": "4.48%",
+    "label": "Share of all votes"
+   },
+   {
+    "value": "76%",
+    "label": "Voter turnout (1,473 of 1,873)"
+   }
+  ],
+  "outcome": "Elected Exco of Art & Culture for the 2026–2027 term."
+ },
+ "contact": {
+  "email": "",
+  "phone": "",
+  "social": {
+   "linkedin": "https://www.linkedin.com/in/khalid-abdussamii-10a66335a",
+   "github": "https://github.com/starr-saiff",
+   "website": ""
+  }
+ }
+}
