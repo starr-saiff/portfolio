@@ -267,7 +267,7 @@ export default function Projects() {
 
   if (loading) {
     return (
-      <section id="projects" className="pt-10 pb-24 md:pt-12 md:pb-32 relative overflow-hidden">
+      <section id="projects" className="py-24 md:py-32 relative overflow-hidden">
         <div className="container-custom flex items-center justify-center">
           <div className="text-center">
             <div className="w-16 h-16 border-4 border-[#00d4ff] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
@@ -279,7 +279,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="pt-10 pb-24 md:pt-12 md:pb-32 relative overflow-hidden">
+    <section id="projects" className="py-24 md:py-32 relative overflow-hidden">
       <div className="blob w-[500px] h-[500px] bg-[#7c3aed] top-1/2 right-0 opacity-[0.07] -translate-y-1/2" />
       <div className="blob w-[400px] h-[400px] bg-[#00d4ff] bottom-0 left-1/4 opacity-[0.05]" />
 

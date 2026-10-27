@@ -111,7 +111,7 @@ export default function Skills() {
           {/* Top Right Stats */}
           <div className="flex flex-wrap gap-4 select-none">
             <div className="bg-[#111118] border border-white/5 rounded-2xl px-6 py-4 flex flex-col items-center hover:border-white/10 transition-colors">
-              <span className="text-2xl font-bold text-white mb-1"><Counter value={portfolioData.about.yearsOfExperience} />+</span>
+              <span className="text-2xl font-bold text-white mb-1"><Counter value={portfolioData.certifications?.length || 0} />+</span>
               <span className="text-[10px] text-slate-500 uppercase tracking-widest font-semibold">Certificates</span>
             </div>
             <div className="bg-[#111118] border border-white/5 rounded-2xl px-6 py-4 flex flex-col items-center hover:border-white/10 transition-colors">

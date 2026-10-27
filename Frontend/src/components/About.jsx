@@ -90,11 +90,11 @@ export default function About() {
   transition={{ delay: 0.6 }}
 >
   <span className="text-2xl font-bold font-display text-gradient block">
-    59+
-  </span>
-  <span className="text-xs text-cyan-400">
-    Certifications
-  </span>
+  {portfolioData.certifications?.length || 0}+
+</span>
+<span className="text-xs text-cyan-400">
+  Certifications
+</span>
 </motion.div>
 
 {/* Floating card - Projects */}
