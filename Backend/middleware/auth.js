@@ -15,7 +15,9 @@ const auth = async (req, res, next) => {
     if (!user) {
       return res.status(401).json({ message: 'Token is not valid' });
     }
-    
+    if (user.role !== 'admin') {
+  return res.status(403).json({ message: 'Admin access only' });
+}
     req.userId = decoded.userId;
     req.user = user;
     next();

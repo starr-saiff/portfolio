@@ -14,6 +14,10 @@ import AdminApp from './admin/AdminApp';
 import { Analytics } from '@vercel/analytics/react';
 import { PortfolioProvider } from './context/PortfolioContext';
 
+// Secret admin address: set VITE_ADMIN_PATH in Frontend/.env (e.g. my-private-door).
+// Defaults to "admin" when the variable is missing.
+const ADMIN_PATH = (import.meta.env.VITE_ADMIN_PATH || 'admin').replace(/^\/+|\/+$/g, '');
+
 const SectionDivider = () => (
   <div className="w-full h-px bg-gradient-to-r from-transparent via-[#00d4ff]/20 to-transparent section-divider" />
 );
@@ -40,20 +44,19 @@ function Portfolio() {
         </main>
         <Footer />
       </div>
-      <Analytics />
     </div>
   );
 }
 
 function AppContent() {
   const location = useLocation();
-  const isAdminRoute = location.pathname.startsWith('/admin');
+  const isAdminRoute = location.pathname.startsWith(`/${ADMIN_PATH}`);
 
   return (
     <>
       <Routes>
         <Route path="/" element={<Portfolio />} />
-        <Route path="/admin/*" element={<AdminApp />} />
+        <Route path={`/${ADMIN_PATH}/*`} element={<AdminApp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {!isAdminRoute && <Analytics />}

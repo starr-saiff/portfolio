@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
-import { HiArrowDownTray, HiCog6Tooth, HiSwatch } from 'react-icons/hi2';
+import { HiArrowDownTray, HiSwatch } from 'react-icons/hi2';
 import { usePortfolioData } from '../context/PortfolioContext';
 import { imgSrc } from '../utils/imgSrc';
 
@@ -18,7 +17,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-    const { portfolioData } = usePortfolioData();
+  const { portfolioData } = usePortfolioData();
   const cvUrl = portfolioData.cvUrl ? imgSrc(portfolioData.cvUrl, '') : '';
   const [scrolled, setScrolled]     = useState(false);
   const [menuOpen, setMenuOpen]     = useState(false);
@@ -133,13 +132,6 @@ export default function Navbar() {
                 </motion.div>
               </motion.button>
 
-              <RouterLink
-                to="/admin"
-                className="p-2.5 rounded-lg glass-card text-slate-400 hover:text-[#00d4ff] hover:border-[#00d4ff]/30 hover:shadow-[0_0_15px_rgba(0,212,255,0.2)] transition-all duration-300"
-                title="Admin Panel"
-              >
-                <HiCog6Tooth className="w-4 h-4" />
-              </RouterLink>
               <a
                 href={cvUrl || '#'}
                 download
@@ -209,14 +201,6 @@ export default function Navbar() {
                   <HiSwatch className="w-4 h-4" />
                   Toggle Theme
                 </button>
-                <RouterLink
-                  to="/admin"
-                  className="btn-outline w-full justify-center"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  <HiCog6Tooth className="w-4 h-4" />
-                  Admin Panel
-                </RouterLink>
                 <a href={cvUrl || '#'} download id="mobile-download-cv"    target="_blank" rel="noopener noreferrer" onClick={(e) => { if (!cvUrl) e.preventDefault(); }} className="btn-primary w-full justify-center">
                   <HiArrowDownTray className="w-4 h-4" />
                   {cvUrl ? 'View & Download CV' : 'CV Coming Soon'}
