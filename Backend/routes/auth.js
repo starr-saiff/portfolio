@@ -61,5 +61,40 @@ router.get('/me', auth, async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+// PUT /api/auth/account - change username / email / password (protected, needs the current password)
+router.put('/account', auth, async (req, res) => {
+  try {
+    const { currentPassword, newUsername, newEmail, newPassword } = req.body;
 
+    if (!currentPassword) {
+      return res.status(400).json({ message: 'Current password is required' });
+    }
+
+    const user = await User.findById(req.userId);
+    if (!user || !(await user.comparePassword(currentPassword))) {
+      return res.status(400).json({ message: 'Current password is incorrect' });
+    }
+
+    if (newPassword) {
+      if (newPassword.length < 8) {
+        return res.status(400).json({ message: 'New password must be at least 8 characters' });
+      }
+      user.password = newPassword; // hashed automatically before saving
+    }
+    if (newUsername && newUsername.trim()) user.username = newUsername.trim();
+    if (newEmail && newEmail.trim()) user.email = newEmail.trim();
+
+    await user.save();
+    res.json({
+      message: 'Account updated',
+      user: { id: user._id, username: user.username, email: user.email, role: user.role },
+    });
+  } catch (error) {
+    if (error.code === 11000) {
+      return res.status(400).json({ message: 'That username or email is already in use' });
+    }
+    console.error('Update account error:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
 module.exports = router;

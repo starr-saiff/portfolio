@@ -19,13 +19,13 @@ app.use(express.urlencoded({ extended: true }));
 // Note: Removed static file serving - now using Cloudinary for all uploads
    // Slow down password guessing and contact-form spam
    app.use('/api/auth/login', rateLimit({ windowMs: 15 * 60 * 1000, max: 10, message: { message: 'Too many login attempts. Try again in 15 minutes.' } }));
+   app.use('/api/auth/account', rateLimit({ windowMs: 15 * 60 * 1000, max: 10, message: { message: 'Too many attempts. Try again in 15 minutes.' } }));
    app.use('/api/contact', (req, res, next) => (req.method === 'POST' ? rateLimit({ windowMs: 60 * 60 * 1000, max: 10, message: { message: 'Too many messages. Please try later.' } })(req, res, next) : next()));
 // Routes
 app.use('/api/portfolio', require('./routes/portfolio'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/contact', require('./routes/contact'));
 app.use('/api/upload', require('./routes/upload'));
-
 // Basic route
 app.get('/', (req, res) => {
   res.json({ message: 'Portfolio Backend API is running!' });

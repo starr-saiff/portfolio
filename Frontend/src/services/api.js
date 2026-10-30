@@ -1,7 +1,8 @@
 // API Configuration
 // VITE_API_URL is the backend origin (no trailing /api)
 const API_BASE_URL = `${(import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '')}/api`;
-
+  // Secret admin address (same value as in App.jsx)
+  const ADMIN_PATH = (import.meta.env.VITE_ADMIN_PATH || 'admin').replace(/^\/+|\/+$/g, '');
 // Helper function to get auth token
 const getAuthToken = () => {
   return localStorage.getItem('admin_token');
@@ -20,8 +21,8 @@ const handleResponse = async (response) => {
       sessionStorage.removeItem('admin_authenticated');
       
       // Redirect to login if on admin page
-      if (window.location.pathname.startsWith('/admin')) {
-        window.location.href = '/admin';
+        if (window.location.pathname.startsWith(`/${ADMIN_PATH}`)) {
+    window.location.href = `/${ADMIN_PATH}`;
       }
     }
     
@@ -92,7 +93,20 @@ export const authAPI = {
     
     return data;
   },
-
+  // Change username / email / password (needs the current password)
+  updateAccount: async (data) => {
+    const response = await fetch(`${API_BASE_URL}/auth/account`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${getAuthToken()}`
+      },
+      body: JSON.stringify(data)
+    });
+    const result = await handleResponse(response);
+    if (result.user) localStorage.setItem('admin_user', JSON.stringify(result.user));
+    return result;
+  },
   // Register
   register: async (username, email, password) => {
     const response = await fetch(`${API_BASE_URL}/auth/register`, {

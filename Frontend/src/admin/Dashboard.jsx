@@ -11,6 +11,8 @@ import { portfolioAPI, contactAPI } from '../services/api';
 import AboutManager from './sections/AboutManager';
 import EducationManager from './sections/EducationManager';
 import CertificationsManager from './sections/CertificationsManager';
+  import AccountManager from './sections/AccountManager';
+  import { HiKey } from 'react-icons/hi2';
 import SocialsManager from './sections/SocialsManager';
 import SkillsManager from './sections/SkillsManager';
 import ExperienceManager from './sections/ExperienceManager';
@@ -29,6 +31,7 @@ const menuItems = [
      { id: 'socials', label: 'Social Links', icon: HiLink },
   { id: 'projects', label: 'Projects', icon: HiRectangleStack },
   { id: 'contact', label: 'Messages & Contact', icon: HiEnvelope },
+    { id: 'account', label: 'Account', icon: HiKey },
 ];
 
 export default function Dashboard({ onLogout }) {
@@ -52,6 +55,7 @@ export default function Dashboard({ onLogout }) {
       case 'certifications': return <CertificationsManager />;
          case 'socials': return <SocialsManager />;
       case 'projects': return <ProjectsManager />;
+        case 'account': return <AccountManager />;
       case 'contact': return <ContactManager />;
       default: return <Overview setActiveSection={setActiveSection} />;
     }
