@@ -1,86 +1,96 @@
-# Muhib's Developer Portfolio
+# Khalid Abdussamii — Portfolio (Frontend)
 
-A premium, fully responsive, and highly professional developer portfolio website built for a modern frontend developer. The site features a dark-themed UI with glassmorphism, neon blue and purple gradients, and smooth scroll-triggered animations.
+The website and admin panel for **Khalid Abdussamii**'s portfolio: a dark glassmorphism design with neon cyan and purple accents, smooth scroll animations, and a private admin area for editing every section.
 
-![Portfolio Preview](./public/portfolio-preview.webp) *(Note: Add a screenshot of your portfolio in the public folder to display here)*
+> The API lives in [`../Backend`](../Backend). See the [main README](../README.md) for the full setup.
 
-## 🚀 Features
+## ✨ What's in the Site
 
-- **Modern Glassmorphism UI**: High-end translucent design elements perfect for presenting a sleek tech portfolio.
-- **Dynamic Orbit Animation**: A custom CSS and Framer Motion animation orbiting around the profile card in the Hero section.
-- **Beautiful Scroll Animations**: Every section elegantly fades and slides into view as the user scrolls down the page.
-- **Interactive "Skills" progress**: Animated skill progress bars and floating stat-counters.
-- **Fully Responsive Layout**: Perfectly tailored views for Mobile, Tablet, and Desktop users.
-- **Form UI Ready**: Beautifully styled contact form ready to be integrated with a backend service (e.g., Formspree or EmailJS).
+- **Hero:** typing animation, orbiting skill badges, live counters (certificates, SRC votes, roles, projects) and a CV button ("View & Download CV", or "CV Coming Soon" until a PDF is uploaded).
+- **About, Leadership & Experience, Education:** photo, highlights, a timeline of roles and an election-result card.
+- **Certifications:** featured cards and a filterable "show all" list.
+- **Skills:** grouped by category.
+- **Projects:** GitHub-linked cards with a "Featured" badge.
+- **Contact:** a form that saves messages to the database, plus social links and availability text.
+- **Admin panel** at a private address: profile, about, skills, education, experience, certifications, projects, social links, a messages inbox and an account page.
+- Light and dark theme toggle, and a layout built to adapt to phones, tablets and desktops.
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
-- **React (`react`)**: Core library for UI components.
-- **Vite (`vite`)**: Ultra-fast frontend build tool.
-- **Tailwind CSS (`tailwindcss`)**: Utility-first CSS framework for rapid styling.
-- **Framer Motion (`framer-motion`)**: Production-ready animation library used for scroll reveals and orbit effects.
-- **React Icons (`react-icons`)**: Lightweight library for scalable SVG icons.
-- **React Scroll (`react-scroll`)**: Used to enable smooth scrolling to anchored sections on single-page applications.
-- **React Type Animation (`react-type-animation`)**: Used for the interactive typewriter effect in the hero section.
+- **React 18** and **Vite**
+- **Tailwind CSS**
+- **Framer Motion** for animations
+- **React Router** for the website and admin routes
+- **React Icons**, **React Scroll**, **React Type Animation**
+- **Vercel Analytics**
 
-## 📁 Project Structure
+## 📁 Structure
 
 ```text
-muhib-portfolio/
-├── public/                 # Static public assets (e.g., CV pdf)
-│   └── muhib-cv.pdf        # Downloadable CV file
+Frontend/
+├── public/                  # Static files (profile photo, etc.)
 ├── src/
-│   ├── assets/             # Images and local media
-│   │   └── muhib.png       
-│   ├── components/         # Independent React UI components
-│   │   ├── Navbar.jsx      
-│   │   ├── Hero.jsx        
-│   │   ├── About.jsx       
-│   │   ├── Skills.jsx      
-│   │   ├── Projects.jsx    
-│   │   ├── Contact.jsx     
-│   │   └── Footer.jsx      
-│   ├── App.jsx             # Main layout assembly
-│   ├── index.css           # Global Tailwind & Custom styles
-│   └── main.jsx            # Application entry point
-├── tailwind.config.js      # Global layout configs (theme colors, animations)
-└── package.json            # Project dependencies
+│   ├── admin/               # Admin panel: Login, Dashboard, sections/
+│   ├── components/          # Website sections (Hero, About, Skills, ...)
+│   ├── context/             # PortfolioContext: loads data from the API
+│   ├── data/                # Built-in backup content and certificates
+│   ├── services/            # api.js: every call to the backend
+│   ├── utils/               # Helpers (image links, social icons)
+│   ├── App.jsx              # Routes and layout
+│   └── main.jsx             # Entry point
+├── vercel.json              # Lets deep links (like the admin address) work on Vercel
+├── tailwind.config.js
+└── .env.example
 ```
 
-## ⚙️ How to Setup & Run Locally
+## ⚙️ Run It Locally
 
-1. **Clone the repository** (if hosted on GitHub):
-   ```bash
-   git clone <repository_url>
-   cd muhib-portfolio
-   ```
+You need Node.js 18 or newer and the backend running (see `../Backend`).
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+cp .env.example .env        # on Windows: copy .env.example .env
+npm run dev
+```
 
-3. **Run the local development server**:
-   ```bash
-   npm run dev
-   ```
-   *The server will typically start at `http://localhost:5173/`.*
+The site opens at `http://localhost:5173`.
 
-4. **Build for production** (when ready to deploy):
-   ```bash
-   npm run build
-   ```
+### Environment variables (`Frontend/.env`)
 
-## 🎨 Customizing the Content
+| Variable | What it is |
+|---|---|
+| `VITE_API_URL` | The backend address, e.g. `http://localhost:5000` (no trailing slash, no `/api`) |
+| `VITE_ADMIN_PATH` | The private admin address, e.g. `my-private-path`. Leave empty to use `/admin` |
+| `VITE_WEB3FORMS_KEY` | Optional. A free [Web3Forms](https://web3forms.com) key for email alerts |
 
-- **Personal Information**: Open the individual component files (like `About.jsx`, `Contact.jsx`, `Hero.jsx`) to update placeholder text with your actual bio, phone number, location, etc.
-- **Changing Projects**: Navigate to `src/components/Projects.jsx` and look for the `projects` array at the top of the file to replace placeholder titles, descriptions, and Github links with your own work.
-- **CV Download**: Place your resume PDF in the `/public/` directory and name it `muhib-cv.pdf`.
+Restart `npm run dev` after changing `.env`, because Vite only reads it at startup. The admin panel is at `http://localhost:5173/<VITE_ADMIN_PATH>`, and there is no link to it on the public site.
 
-## 🚢 Deployment
+### Scripts
 
-Since this project is built with Vite, it's incredibly easy to deploy to platforms like **Vercel** or **Netlify**. 
-Simply link your GitHub repository to either platform, and the build settings will be automatically detected (`npm run build`, output directory: `dist/`).
+| Command | What it does |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Build for production into `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Check the code with ESLint |
+
+## 🎨 Customising
+
+Most content is edited in the **admin panel**, with no code changes. The built-in backup content is in `src/data/portfolioData.js`. The site shows it only when the database is empty or the backend can't be reached.
+
+## 🚢 Deploy to Vercel
+
+1. Import the repository on [Vercel](https://vercel.com).
+2. Set **Root Directory** to `Frontend` (the framework is detected as Vite).
+3. Add the environment variables above, with `VITE_API_URL` pointing at your deployed backend.
+4. Deploy. `vercel.json` makes direct links work, including the admin address.
+
+After changing a `VITE_` variable on Vercel, redeploy, because those values are built into the site.
+
+## 🔒 Notes
+
+- Never commit `.env` files or paste API keys into this file.
+- `VITE_` variables end up in the website's code, so never put private secrets in them.
 
 ---
-*Coded and designed with 💙 using React & Tailwind.*
+*Built with 💙 using React and Tailwind.*
