@@ -2,7 +2,7 @@
 
 A full-stack personal portfolio for **Khalid Abdussamii**, a Computer Science student at Albukhary International University and aspiring Data Scientist, SRC Exco (Art & Culture) and student leader.
 
-The site has a dark glassmorphism design with neon cyan and purple accents, smooth scroll animations, and a private **admin panel** so every section can be edited without touching the code
+The site has a dark glassmorphism design with neon cyan and purple accents, smooth scroll animations, and a private **admin panel** so every section can be edited without touching the code.
 
 <!-- Add a screenshot to the repo, then uncomment the next line and fix the path:
 ![Portfolio preview](Frontend/public/screenshot.png)
